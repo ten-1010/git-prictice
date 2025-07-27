@@ -8,6 +8,11 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello, World!";
+        return "Hello";
+    }
+
+    @GetMapping("/api/frontend")
+    public String getFrontendData() {
+        return "Frontend data from UI branch";
     }
 }
