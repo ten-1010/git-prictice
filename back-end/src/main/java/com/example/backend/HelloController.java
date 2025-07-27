@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello from Backend REST API Branch!";
+        return "Hello from Merged Branches!";
     }
 
     @GetMapping("/api/users")
@@ -24,5 +24,10 @@ public class HelloController {
     @GetMapping("/api/backend")
     public String getBackendInfo() {
         return "Backend REST API information";
+    }
+
+    @GetMapping("/api/frontend")
+    public String getFrontendData() {
+        return "Frontend data from UI branch";
     }
 }
